@@ -1,4 +1,21 @@
-import { promises as fs } from 'fs';
+import fs from "fs/promises";
 import path from 'path';
 
-const contactsPath = path.join('db', 'contacts.json');
+const contactsPath = path.resolve('db', 'contacts.json');
+
+
+export async function listContacts() {
+    // ...твій код. Повертає масив контактів.
+  }
+  
+  async function getContactById(contactId) {
+    // ...твій код. Повертає об'єкт контакту з таким id. Повертає null, якщо контакт з таким id не знайдений.
+  }
+  
+  async function removeContact(contactId) {
+    // ...твій код. Повертає об'єкт видаленого контакту. Повертає null, якщо контакт з таким id не знайдений.
+  }
+  
+  async function addContact(name, email, phone) {
+    // ...твій код. Повертає об'єкт доданого контакту (з id).
+  }
